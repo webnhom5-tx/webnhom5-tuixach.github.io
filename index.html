@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="./Views/web.css"/>
-        <link rel="stylesheet" type="text/css" href="Public/client/css/main.css">
-    <link rel="stylesheet" type="text/css" href="Public/client/css/util.css">
+        <link rel="stylesheet" href="./cssgit/web.css"/>
+        <link rel="stylesheet" type="text/css" href="cssgit/util.css">
+        <link rel="stylesheet" type="text/css" href="cssgit/main.css">
      <style>
 .pagination a {
    color: black;
@@ -25,12 +25,11 @@
    background-color: #ddd;
  }
  .cuttext{
-    {
     height: 10px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-}
+
  }
 .btnadd{
     border: 0.1px hsl(145, 84%, 45%) solid;
@@ -49,24 +48,10 @@
            <tr >
             <td >
             <a class="RTC mg fcl" style="text-decoration: none">Home</a>
-            <?php
-              if($check)
-                {
-                 if( $level=='ad')
-                 {echo '<span class="right" style="margin-left: 65%;"><a class="fcl bd" href="./admin" style="text-decoration: none">Quản lí web</a>&nbsp&nbsp'; }
-                else{echo '<span class="right" style="margin-left: 72%;">';}
-                 echo '<a class="fcl bd" href="./?controllers=sale&&id='.$check.'" style="text-decoration: none">Danh sách SP đã đặt</a> &nbsp
-                    <a class="fcl bd" href="./?controllers=contact" style="text-decoration: none">Liên hệ</a> &nbsp
-                    <a class="fcl bd" href="./" style="text-decoration: none">'.$check.'(Log Out)</a> &nbsp
-                </span>';}
-              else
-              {echo '<span class="right" style="margin-left: 85%;">
+            <span class="right" style="margin-left: 85%;">
                
                 <a class="fcl bd" style="text-decoration: none" type="submit" href="./?action=login">Đăng Nhập</a>
-            </span>';
-            }
-            ?>
-            </td>
+            </span>            </td>
            </tr>
        </table>
        <div class="container4">
@@ -98,35 +83,21 @@
             <tr >
                 <th>
                     <div class="fl-left" id="display">
-                        <?php 
-                         if($check)
-                         {for($i=0;$i<count($categorys);$i++)
-                            { echo  '<div style="height:350px;"  class="card" ><img src="'.$categorys[$i]['image'].'" alt="Avatar" style="width: 100%;"><h4><a style="text-decoration: none" href="./?controllers=Product&&action=index&&id='.$categorys[$i]['id'].'&&tk='.$check.'" class="cuttext">'.$categorys[$i]['content'].'</a></h4>
-                              <br>  
-                              <a class="btnadd" style="text-decoration: none" href="./?controllers=add&&mt='.$categorys[$i]['id'].'&&id='.$check.'">Thêm vào giỏ hàng</a>
-                                
-                              </div>';} 
-
-                         }
-                         else{
-                            for($i=0;$i<count($categorys);$i++)
-                            { echo  '<div  class="card" ><img src="'.$categorys[$i]['image'].'" alt="Avatar" style="width: 100%;"><h4><a style="text-decoration: none" href="./?controllers=Product&&action=index&&id='.$categorys[$i]['id'].'&&tk='.$check.'" class="cuttext">'.$categorys[$i]['content'].'</a></h4>
-                              </div>';} 
-
-                         }
-                          
-                        ?>
-                    </div>
+                        <div  class="card" ><img src="./Public/client/img/Cặp học sinh TOMI/Balo Học Sinh Tomi B20_Lake Blue.webp" alt="Avatar" style="width: 100%;"><h4><a style="text-decoration: none" href="./?controllers=Product&&action=index&&id=B20_Lake Blue&&tk=" class="cuttext">Balo Học Sinh Tomi B20_Lake Blue</a></h4>
+                              </div><div  class="card" ><img src="./Public/client/img/Cặp học sinh TOMI/Balo Học Sinh Tomi B20_Navy.webp" alt="Avatar" style="width: 100%;"><h4><a style="text-decoration: none" href="./?controllers=Product&&action=index&&id=B20_Navy&&tk=" class="cuttext">Balo Học Sinh Tomi B20_Navy</a></h4>
+                              </div><div  class="card" ><img src="./Public/client/img/Cặp học sinh TOMI/Balo Học Sinh Tomi B20_Pink.webp" alt="Avatar" style="width: 100%;"><h4><a style="text-decoration: none" href="./?controllers=Product&&action=index&&id=B20_Pink&&tk=" class="cuttext">Balo Học Sinh Tomi B20_Pink</a></h4>
+                              </div><div  class="card" ><img src="./Public/client/img/Cặp học sinh TOMI/Balo Học Sinh Tomi B20_Royal Blue.webp" alt="Avatar" style="width: 100%;"><h4><a style="text-decoration: none" href="./?controllers=Product&&action=index&&id=B20_Royal Blue&&tk=" class="cuttext">Balo Học Sinh Tomi B20_Royal Blue</a></h4>
+                              </div><div  class="card" ><img src="./Public/client/img/Cặp học sinh TOMI/Cặp Học Sinh Tomi F20_Blue.webp" alt="Avatar" style="width: 100%;"><h4><a style="text-decoration: none" href="./?controllers=Product&&action=index&&id=F20_Blue&&tk=" class="cuttext">Cặp Học Sinh Tomi F20_Blue</a></h4>
+                              </div><div  class="card" ><img src="./Public/client/img/Cặp học sinh TOMI/Cặp Học Sinh Tomi F20_Lake Blue.webp" alt="Avatar" style="width: 100%;"><h4><a style="text-decoration: none" href="./?controllers=Product&&action=index&&id=F20_Lake Blue&&tk=" class="cuttext">Cặp Học Sinh Tomi F20_Lake Blue</a></h4>
+                              </div><div  class="card" ><img src="./Public/client/img/Cặp học sinh TOMI/Cặp Học Sinh Tomi F20_Navy.webp" alt="Avatar" style="width: 100%;"><h4><a style="text-decoration: none" href="./?controllers=Product&&action=index&&id=F20_Navy&&tk=" class="cuttext">Cặp Học Sinh Tomi F20_Navy</a></h4>
+                              </div><div  class="card" ><img src="./Public/client/img/Cặp học sinh TOMI/Cặp Học Sinh Tomi F20_pink.webp" alt="Avatar" style="width: 100%;"><h4><a style="text-decoration: none" href="./?controllers=Product&&action=index&&id=F20_Pink&&tk=" class="cuttext">Cặp Học Sinh Tomi F20_Pink</a></h4>
+                              </div>                    </div>
                 </th>
             </tr>
             <tr>
                 <th colspan="4" >
                 <div class="pagination" style="margin-left:450px;">
-                <?php
-                for($page = 1; $page<=5; $page++) {
-                 echo '<a href = "./?controllers=back&&page=' . $page . '">' . $page . '</a>';}
-                 ?>
-                 </div>
+                <a href = "./?controllers=back&&page=1">1</a><a href = "./?controllers=back&&page=2">2</a><a href = "./?controllers=back&&page=3">3</a><a href = "./?controllers=back&&page=4">4</a><a href = "./?controllers=back&&page=5">5</a>                 </div>
                 </th>
             </tr>
         </table>
@@ -139,7 +110,7 @@
             
     
                  <th>
-                 <b>Giảng viên hỗ trợ: </b><br>
+                 <b>Giảng viên hỗ trợ: Trần Hồng Việt </b><br>
                     <b>Chủ Nhiệm Đề Tài: Nhóm 5</b><br>
                     <i>DHTI12A1HN </i></th>
                
