@@ -3,7 +3,7 @@
  + Đỗ Văn Bắc
  + Phạm Thành Đạt
  + Đinh Đức Cường
- -Ngôn ngữ sử dụng:
+-Ngôn ngữ sử dụng:
  js, php, html, css.
  
 MVC là viết tắt của cụm từ “Model-View-Controller“. MVC là một mẫu kiến trúc phần mềm để tạo lập giao diện người dùng trên máy tính. MVC chia thành ba phần được kết nối với nhau. Chúng bao gồm Model (dữ liệu), View (giao diện) và Controller (bộ điều khiển).
@@ -24,4 +24,6 @@ Trong mô hình MVC, bạn có thể tạo nhiều View cho chỉ một mô hìn
 
 Đối với bất kỳ ứng dụng web nào, user interface có xu hướng thay đổi thường xuyên. Rõ ràng là bạn rất thường xuyên thay đổi màu sắc, font chữ, bố cục màn hình. Hay là thêm hỗ trợ 
 thiết bị mới cho điện thoại hay máy tính bảng…
+
+
 [Báo cáo thực tập web.pptx](https://github.com/webnhom5-tx/webnhom5-tx.github.io/files/7638164/Bao.cao.th.c.t.p.web.pptx)
